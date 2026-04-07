@@ -1,2 +1,2 @@
 def authenticate():
-    return "[AUTH] Operator verified — ground station linked"
+    return "[AUTH] AUTH MODULE STABLE"
