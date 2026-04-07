@@ -1,14 +1,23 @@
+from auth import login
+from telemetry import parser
+from ground_control import dashboard
+from launch_sequence import dispatcher
+
+
 def check_auth():
-    return "[AUTH]"  # placeholder
+    return login.authenticate()
+
 
 def check_telemetry():
-    return "[TELEMETRY]"  # placeholder
+    return parser.parse_signal()
+
 
 def check_dispatch():
-    return "[DISPATCH]"  # placeholder
+    return dispatcher.dispatch()
+
 
 def check_ground():
-    return "[GROUND]"  # placeholder
+    return dashboard.display_status()
 
 
 def run_all_checks():
@@ -16,6 +25,7 @@ def run_all_checks():
     print(check_telemetry())
     print(check_dispatch())
     print(check_ground())
+
     print("❌ SYSTEM NOT STABLE")
 
 
