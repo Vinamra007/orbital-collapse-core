@@ -1,2 +1,2 @@
-def system_health():
-    return "OK"
+def display_status():
+    return "[GROUND] Dashboard v2 — satellite grid online"
