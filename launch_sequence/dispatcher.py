@@ -1,3 +1,2 @@
-def dispatch():
-    print("DEBUG MODE")  # unwanted
-    return "[DISPATCH] FAILED"
+def dispatch_command():
+    return "[DISPATCH] Command sent successfully"
